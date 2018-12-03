@@ -82,4 +82,15 @@ public class FuelController : MonoBehaviour {
 	void Print() {
 		fuelText.text = string.Format("{0}%", (int)fuelLeft);
 	}
+
+	void OnGUI() {
+
+		Texture2D texture = new Texture2D(1, 1);
+		texture.SetPixel(0, 0, new Color(255, 0, 0));
+		texture.Apply();
+		//GUI.Box(new Rect(0, 0, 500, 50), texture);
+		//texture.SetPixel(0, 0, new Color(255, 0, 0));
+		//texture.Apply();
+		GUI.Box(new Rect(0, 0, fuelLeft * 5, 50), texture);
+	}
 }
