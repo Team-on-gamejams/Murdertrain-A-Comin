@@ -19,20 +19,21 @@ public class BarrierScript : MonoBehaviour {
     public void OpenGate() {
         opened = true;
         done = false;
-    }
+		openAction();
+	}
     void openAction() {
         killColider.enabled = false;        
     }
     void closeAction() {
-        killColider.enabled = true;       
+		killColider.enabled = true;       
     }
 
     // Update is called once per frame
     void Update() {
         if (!done) {
             if (opened) {
-                for (int i = 0; i < objList.Count; i++) {
-                    if (Vector3.Distance(objList[i].eulerAngles, closePosition[i].eulerAngles) < 1) {
+				for (int i = 0; i < objList.Count; i++) {
+					if (Vector3.Distance(objList[i].eulerAngles, closePosition [i].eulerAngles) < 1) {
                         done = true;
                         openAction();
                     }

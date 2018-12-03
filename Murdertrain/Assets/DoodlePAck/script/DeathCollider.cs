@@ -3,18 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DeathCollider : MonoBehaviour {
+	void Start() {
 
-	// Use this for initialization
-	void Start () {
-		
 	}
-    private void OnTriggerEnter(Collider other) {
-        if (other.gameObject.name == "Paravoz") {
-            Debug.Log("DEAD");
-        }
-    }
-    // Update is called once per frame
-    void Update () {
-		
+	private void OnTriggerEnter(Collider other) {
+		if (this.enabled)
+			if (other.gameObject.tag == "Killer") {
+				TrainController.inst.DestroyTrain();
+			}
 	}
 }
