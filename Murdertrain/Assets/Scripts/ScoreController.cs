@@ -17,7 +17,7 @@ public class ScoreController : MonoBehaviour {
 	void Update() {
 		if (TrainController.inst.IsAlive)
 			score += Time.deltaTime;
-		scoreText.text = ((int)(score)).ToString();
+		scoreText.text = "Score:"+((int)(score)).ToString();
 	}
 
 	public void AddToScore(float _score){

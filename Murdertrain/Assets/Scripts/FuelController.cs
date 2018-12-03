@@ -80,7 +80,7 @@ public class FuelController : MonoBehaviour {
 	}
 
 	void Print() {
-		fuelText.text = string.Format("{0}%", (int)fuelLeft);
+		fuelText.text = string.Format("Fuel: {0}%", (int)fuelLeft);
 	}
 
 	void OnGUI() {

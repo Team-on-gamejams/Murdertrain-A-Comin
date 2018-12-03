@@ -8,13 +8,15 @@ public class TrainController : MonoBehaviour {
 
 	public bool IsAlive = true;
 	public Image DieImage;
+    public Text restartText;
 
-	void Start() {
+    void Start() {
 		inst = this;
 		Color c = DieImage.color;
 		c.a = 0;
 		DieImage.color = c;
-	}
+        restartText.enabled = false;
+    }
 
 	void Update() {
 		if(!IsAlive){
@@ -24,14 +26,27 @@ public class TrainController : MonoBehaviour {
 				DieImage.color = c;
 			}
 		}
-	}
 
-	public void DestroyTrain() {
+        if(time!=0 && Time.time > time) {
+            restartText.enabled = true;
+            needReload = true;
+        } 
+
+        if (needReload && Input.anyKey) {
+            ReloadScene.inst.Reload();
+            needReload = false;
+            time = 0;
+        }
+    }
+
+    bool needReload = false;
+    public float time = 0;
+    
+    public void DestroyTrain() {
 		GetComponent<MoveWheelsMain>().MaxSpeed = 0;
 		GetComponent<FuelController>().IsConsumeFuel = false;
 		IsAlive = false;
-		FuelController.inst.LowFuelImage.enabled = false;
-
-		Debug.Log("Train die");
-	}
+		FuelController.inst.LowFuelImage.enabled = false;				        
+        time = Time.time +5.5f;
+    }
 }

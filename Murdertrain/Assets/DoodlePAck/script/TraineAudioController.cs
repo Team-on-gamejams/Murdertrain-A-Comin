@@ -25,8 +25,9 @@ public class TraineAudioController : MonoBehaviour {
         /*Debug.Log(sounds.Count);
         Debug.Log(sounds[0].name);
         Debug.Log("sound.GetHashCode()"+sound.GetHashCode());*/
-        ac.clip = sounds[sound.GetHashCode()];
-        ac.volume = 0.1f;
+        int nomb = (sound == SoundPack.Joy) ? Random.Range(2, 9) : sound.GetHashCode();
+        ac.clip = sounds[nomb];
+        ac.volume = (sound == SoundPack.Joy)?1:0.1f;
         ac.Play();
         return ac;
     }

@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114441184020461334}
   m_Layer: 0
   m_Name: AudioController
-  m_TagString: Untagged
+  m_TagString: Immortal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36,8 +36,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1554812659422100}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 17.2, y: 3.65, z: -3.8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 42.039, y: 64.397, z: -58.711}
+  m_LocalScale: {x: 1.7, y: 1.7, z: 1.7}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -246,3 +246,11 @@ MonoBehaviour:
   sounds:
   - {fileID: 8300000, guid: 5fa8032475d4a5145bd9dda04148c8ba, type: 3}
   - {fileID: 8300000, guid: 5b5c39ec8e14cb246bea7d396ff238e2, type: 3}
+  - {fileID: 8300000, guid: b9ffcafa958ce404f86b6c0b51dec3fb, type: 3}
+  - {fileID: 8300000, guid: 0c6ae3fb2c1beea448e6aae419594804, type: 3}
+  - {fileID: 8300000, guid: 824782b302b3f5941a383b5bb1d8f09f, type: 3}
+  - {fileID: 8300000, guid: 3838d273a8a627d4e9cecf4000a62cfb, type: 3}
+  - {fileID: 8300000, guid: a4dc486c39941f249a5ed11d7dbc8b46, type: 3}
+  - {fileID: 8300000, guid: c769129ca069243449156ec6639a1257, type: 3}
+  - {fileID: 8300000, guid: f0269cd9715dcad4581d3d507909bb89, type: 3}
+  - {fileID: 8300000, guid: c203904bab18d224e805fd825fc38546, type: 3}
