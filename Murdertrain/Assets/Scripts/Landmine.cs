@@ -5,9 +5,9 @@ using UnityEngine;
 public class Landmine : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) {
-		if (other.gameObject.tag == "Char"){
-			other.GetComponent<Explosion>().explodeOnLandmine();
-			Destroy(this.gameObject);
+		if (other.gameObject.CompareTag("Char")){
+            Destroy(this.gameObject);
+            other.GetComponent<Explosion>().explodeOnLandmine();
 		}
 	}
 

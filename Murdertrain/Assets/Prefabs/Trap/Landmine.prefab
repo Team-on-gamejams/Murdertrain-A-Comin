@@ -21,6 +21,9 @@ GameObject:
   - component: {fileID: 4958191238492936}
   - component: {fileID: 33680102709941602}
   - component: {fileID: 23918684692485348}
+  - component: {fileID: 65110903019637774}
+  - component: {fileID: 114519083599928288}
+  - component: {fileID: 114661560519449050}
   m_Layer: 0
   m_Name: trap_mine
   m_TagString: Untagged
@@ -36,9 +39,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4300693109572350}
-  - component: {fileID: 65084183532506910}
-  - component: {fileID: 114112269634598398}
-  - component: {fileID: 114966465080663784}
   m_Layer: 0
   m_Name: Landmine
   m_TagString: Untagged
@@ -116,37 +116,37 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1624437991473568}
   m_Mesh: {fileID: 4300000, guid: ec137af0d1c9b5d4bbab31804670ca70, type: 3}
---- !u!65 &65084183532506910
+--- !u!65 &65110903019637774
 BoxCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1819908302163406}
+  m_GameObject: {fileID: 1624437991473568}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.71, y: 1.6, z: 3.43}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114112269634598398
+  m_Size: {x: 0.049465884, y: 0.03419552, z: 0.007830479}
+  m_Center: {x: -0.0008075237, y: -0.0013801884, z: 0.0039152415}
+--- !u!114 &114519083599928288
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1819908302163406}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6795e9e45867a724f8d8350be1dd8caf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114966465080663784
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1819908302163406}
+  m_GameObject: {fileID: 1624437991473568}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 83b41a3ec673b8548bf2947e21135184, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114661560519449050
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1624437991473568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6795e9e45867a724f8d8350be1dd8caf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

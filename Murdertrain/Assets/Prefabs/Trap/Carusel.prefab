@@ -247,7 +247,7 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &1424471606629466
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
@@ -513,6 +513,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1875456462561530
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4948037385543538}
+  m_Layer: 0
+  m_Name: GameObject (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1891234023126100
 GameObject:
   m_ObjectHideFlags: 1
@@ -601,8 +616,8 @@ Transform:
   - {fileID: 4914873448942968}
   - {fileID: 4675795992081608}
   - {fileID: 4023303246760800}
-  m_Father: {fileID: 4665108960024850}
-  m_RootOrder: 1
+  m_Father: {fileID: 4948037385543538}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4182180645661024
 Transform:
@@ -736,7 +751,7 @@ Transform:
   m_LocalScale: {x: 0.80000013, y: 0.80000013, z: 0.8}
   m_Children:
   - {fileID: 4182180645661024}
-  - {fileID: 4151902437124776}
+  - {fileID: 4948037385543538}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -949,6 +964,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4688131503220620}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4948037385543538
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1875456462561530}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4151902437124776}
+  m_Father: {fileID: 4665108960024850}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4981420003749124
 Transform:

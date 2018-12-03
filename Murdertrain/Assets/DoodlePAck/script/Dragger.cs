@@ -56,7 +56,7 @@ public class Dragger : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {       
-        if (other.gameObject.tag == "Killer")
+        if (other.gameObject.CompareTag("Killer"))
         {            
             Destroy(objToMove.gameObject);
             if (ac != null) {

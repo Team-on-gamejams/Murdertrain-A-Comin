@@ -12,7 +12,7 @@ public class TrapController : MonoBehaviour {
 	}
     private void OnTriggerEnter(Collider collision) {
         GameObject sd;        
-        if (collision.gameObject.tag == "Char" && trapAncor.Count > 0) {
+        if (collision.gameObject.CompareTag("Char") && trapAncor.Count > 0) {
             Dragger rd = collision.gameObject.GetComponent<Dragger>();
             if (rd == null) return;
             collision.gameObject.tag = "Untagged";
