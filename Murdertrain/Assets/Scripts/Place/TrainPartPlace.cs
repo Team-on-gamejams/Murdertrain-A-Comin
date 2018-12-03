@@ -11,8 +11,8 @@ public class TrainPartPlace : MonoBehaviour {
 		foreach (Transform child in transform)
 			Destroy(child.gameObject);
 
-		if (Random.Range(0, 100) <= spawnChance) 
-			Instantiate(trainPart, new Vector3(0, 0, 0) + this.transform.position, Quaternion.identity).transform.eulerAngles = new Vector3(0, 90, 0);
+        if (Random.Range(0, 100) <= spawnChance)
+            Instantiate(trainPart, new Vector3(0, 0, 0) + this.transform.position, Quaternion.identity).transform.eulerAngles = this.transform.eulerAngles + new Vector3(0, -90, 0);
 	}
 	
 	void Update () {

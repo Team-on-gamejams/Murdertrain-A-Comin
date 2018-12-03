@@ -14,37 +14,30 @@ public class TrainPartsHandler : MonoBehaviour {
     }
     private bool needToJoint = false;
     private bool isCollided = false;
-    private bool canJoint = true;
     private GameObject toColide;
-
     private void LateUpdate() {
-            if (toColide == null) {
-                needToJoint = false;
-            }
-            if(needToJoint && !isCollided) {
-                var sp = gameObject.AddComponent<FixedJoint>();
-                sp.connectedBody = toColide.GetComponent<Rigidbody>();
-                canJoint = false;
-                needToJoint = false;
-            } else {
-                isCollided = false;
-            }
+    /*    if(needToJoint && !isCollided) {
+            var sp = gameObject.AddComponent<FixedJoint>();
+            sp.connectedBody = toColide.GetComponent<Rigidbody>();
+        } else {
+            isCollided = false;
+        }*/
     }
     void OnCollisionEnter(Collision collision) {
-        if (canJoint && collision.gameObject!= gameObject &&
-            !collision.gameObject.transform.IsChildOf(gameObject.transform) &&
+        if (
             collision.gameObject.tag == "TrainPart" &&
             (GetComponent<FixedJoint>() == null || GetComponent<FixedJoint>().connectedBody != this || collision.gameObject.GetComponent<FixedJoint>() == null || collision.gameObject.GetComponent<FixedJoint>().connectedBody != this)
-        ) {            
+        ) {
             isCollided = true;
             needToJoint = true;
-            
-            toColide = collision.gameObject;
-            Rigidbody rg = GetComponent<Rigidbody>();
-            rg.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionY;
-            Destroy(gameObject.GetComponent<Drag>());
+            /*
+              toColide = collision.gameObject;
+              Rigidbody rg = GetComponent<Rigidbody>();
+              rg.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionY;
+              Destroy(gameObject.GetComponent<Drag>());
+              */
 
-            /* Дикий способ)) Почти рабочий))
+            /*
             ++partsCnt;
             var gameObject = collision.gameObject;
             Destroy(gameObject.GetComponent<Drag>());
@@ -89,13 +82,11 @@ public class TrainPartsHandler : MonoBehaviour {
             var sp = gameObject.AddComponent<FixedJoint>();
             sp.connectedBody = GetComponent<Rigidbody>();
             */
-            /*var sp = gameObject.AddComponent<FixedJoint>();
-            sp.connectedBody = GetComponent<Rigidbody>();*/
+            var sp = gameObject.AddComponent<FixedJoint>();
+            sp.connectedBody = GetComponent<Rigidbody>();
         }
     }
-
-    // Поприколу способ получить угли бокс колайдера)))
-    private Vector3[] GetColliderVertexPositions(GameObject obj, Collider col) {
+    private Vector3[] GetColliderVertexPositions(GameObject obj, Collider col){
         var vertices = new Vector3[8];
         var thisMatrix = obj.transform.localToWorldMatrix;
         var storedRotation = obj.transform.rotation;

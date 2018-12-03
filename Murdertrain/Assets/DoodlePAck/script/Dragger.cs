@@ -67,7 +67,7 @@ public class Dragger : MonoBehaviour {
         }
     }
     void LateUpdate(){
-        
+        if (objToMove == null) return;
         transform.position = objToMove.position + markerOfset;
         if (!isMove) return;        
         //Plane plane = new Plane(Vector3.up, Vector3.zero);

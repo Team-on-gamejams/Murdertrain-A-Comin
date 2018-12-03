@@ -46,12 +46,11 @@ public class Drag : MonoBehaviour {
 	void Start() {
 		cam = Camera.main;
 		plane = new Plane(Vector3.up, Vector3.zero);
-
+        if (_objToMove == null) { Destroy(this); return; }
 		objToMove = _objToMove.transform;
 		rBod = objToMove.GetComponent<Rigidbody>();
 		markerOfset = objToMove.position - transform.position;
 		col = transform.GetComponent<Collider>();
-
 	}
 	void OnMouseDown() {
 		if (plane.Equals(null)) return;
@@ -67,18 +66,18 @@ public class Drag : MonoBehaviour {
 		cursorPosition = cam.ScreenToWorldPoint(cursorPoint) + offset;
 	}
 
-	void LateUpdate() {
-		transform.position = objToMove.position + markerOfset;
+	void LateUpdate() {		
 		if (!isMove) return;
+        transform.position = objToMove.position + markerOfset;
 
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 		float distance;
 		if (objToMove.position.y > min) {
 			cury -= 2f * Time.deltaTime;
 		}
 		if (plane.Raycast(ray, out distance)) {
-			Vector3 pointalongplane = ray.origin + (ray.direction * distance);
-			objToMove.position = pointalongplane + new Vector3(0, cury, 0); ;
+			Vector3 pointalongplane = ray.origin + (ray.direction * distance) + new Vector3(0, cury, 0);
+            objToMove.position = Vector3.Lerp(objToMove.position, pointalongplane, 5f * Time.deltaTime);
 		}
 	}
 
