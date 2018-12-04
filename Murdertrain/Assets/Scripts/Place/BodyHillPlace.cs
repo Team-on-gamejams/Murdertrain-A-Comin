@@ -16,15 +16,14 @@ public class BodyHillPlace : MonoBehaviour {
 		foreach (Transform child in transform) 
 			Destroy(child.gameObject);
         if (Random.Range(0, 100) <= spawnChance){
-            timer = Time.deltaTime + Random.Range(0.1f, 0.5f);
+            timer = Time.fixedTime + Random.Range(0.1f, 0.5f);
 		}
 	}
 	
 	void Update () {
-        if (!spawned && timer!=0 && Time.deltaTime > timer) {
-            for (byte i = 0, end = (byte)Random.Range(humansMin, humansMax); i < end; ++i) {
+        if (!spawned && timer!=0 && Time.fixedTime > timer) {
+            for (byte i = 0, end = (byte)Random.Range(humansMin, humansMax); i < end; ++i)
                 Instantiate(human, new Vector3(0, 0, 0) + this.transform.position, Quaternion.identity).transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
-            }
             spawned = true;
         }
 		
