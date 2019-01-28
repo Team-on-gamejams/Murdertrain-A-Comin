@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 65110903019637774}
   - component: {fileID: 114519083599928288}
   - component: {fileID: 114661560519449050}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: trap_mine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4300693109572350}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Landmine
   m_TagString: Untagged
   m_Icon: {fileID: 0}

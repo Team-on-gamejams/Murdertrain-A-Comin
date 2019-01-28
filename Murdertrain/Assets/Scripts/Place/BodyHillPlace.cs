@@ -15,13 +15,15 @@ public class BodyHillPlace : MonoBehaviour {
 	void Start () {
 		foreach (Transform child in transform) 
 			Destroy(child.gameObject);
-        if (Random.Range(0, 100) <= spawnChance){
+        if (Random.Range(0, 100) < spawnChance){
             timer = Time.fixedTime + Random.Range(0.1f, 0.5f);
-		}
+            Debug.Log("need spawn");
+        }
 	}
 	
 	void Update () {
         if (!spawned && timer!=0 && Time.fixedTime > timer) {
+            Debug.Log("spawn");
             for (byte i = 0, end = (byte)Random.Range(humansMin, humansMax); i < end; ++i)
                 Instantiate(human, new Vector3(0, 0, 0) + this.transform.position, Quaternion.identity).transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
             spawned = true;

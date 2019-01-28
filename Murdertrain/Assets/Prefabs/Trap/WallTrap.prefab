@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4398177167586860}
   - component: {fileID: 114314431740929476}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: WallTrap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 33809403720429200}
   - component: {fileID: 23435787111775090}
   - component: {fileID: 65546258311655840}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60,7 +60,7 @@ GameObject:
   - component: {fileID: 114872950981336684}
   - component: {fileID: 54003386563183124}
   - component: {fileID: 135744771712966456}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}

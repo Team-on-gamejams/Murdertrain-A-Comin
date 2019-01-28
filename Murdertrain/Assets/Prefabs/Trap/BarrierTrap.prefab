@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4856588565308034}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Corner (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +36,7 @@ GameObject:
   - component: {fileID: 4348704636270370}
   - component: {fileID: 33083338406017852}
   - component: {fileID: 23140456178344556}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cone (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53,7 +53,7 @@ GameObject:
   - component: {fileID: 4729547756788368}
   - component: {fileID: 33752865652586124}
   - component: {fileID: 23118442193184822}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cone (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ GameObject:
   - component: {fileID: 4540394797260744}
   - component: {fileID: 33707581797104040}
   - component: {fileID: 23484976644786380}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cone (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,7 +85,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4699343017025676}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Corner (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4316643350173628}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Obj (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -115,7 +115,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4338880366013518}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Obj
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,7 +130,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4625592831588116}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Corner (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 4293585915552232}
   - component: {fileID: 33952624410926632}
   - component: {fileID: 23558519084088720}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Grid.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -162,7 +162,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4779884785314776}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Corner (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 4332660141292864}
   - component: {fileID: 33082367745265478}
   - component: {fileID: 23326219817494896}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Grid.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -196,7 +196,7 @@ GameObject:
   - component: {fileID: 4171237550905356}
   - component: {fileID: 33689098166723710}
   - component: {fileID: 23252668453529684}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cone (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 4328368224617724}
   - component: {fileID: 33364147805473082}
   - component: {fileID: 23892266475248724}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cone (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -230,7 +230,7 @@ GameObject:
   - component: {fileID: 4305528742340146}
   - component: {fileID: 33823599989878626}
   - component: {fileID: 23249002344956806}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Grid.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -247,7 +247,7 @@ GameObject:
   - component: {fileID: 4315848647446088}
   - component: {fileID: 33530686910290558}
   - component: {fileID: 23101453238790018}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cone (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -262,7 +262,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4476010517734620}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Corner (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -281,7 +281,7 @@ GameObject:
   - component: {fileID: 114709890785360336}
   - component: {fileID: 65963697796230638}
   - component: {fileID: 65249566565937716}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: BarrierTrap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -296,7 +296,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4583126204027576}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: barier (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -313,7 +313,7 @@ GameObject:
   - component: {fileID: 4221566373986436}
   - component: {fileID: 33069712138851936}
   - component: {fileID: 23853632088902636}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Grid.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -328,7 +328,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4781846003087434}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: barier
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -345,7 +345,7 @@ GameObject:
   - component: {fileID: 4937745129990460}
   - component: {fileID: 65848182241579588}
   - component: {fileID: 114178168204705818}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: KillCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -360,7 +360,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4222837033714830}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Corner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
