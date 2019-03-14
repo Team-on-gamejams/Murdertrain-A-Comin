@@ -27,4 +27,4 @@ A little sweet project will show you that any problem can be solved when enough 
 ![](readme/img3.png) 
 
 #### Gameplay video
- [![Gameplay video](https://www.youtube.com/watch?v=YLNo_HohK5Y)]
+[Link](https://www.youtube.com/watch?v=YLNo_HohK5Y)
