@@ -22,9 +22,9 @@ A little sweet project will show you that any problem can be solved when enough 
  * [Team-on](https://ldjam.com/users/team-on)
  
 #### Screenshots
-![](readme/img1.png) 
-![](readme/img2.png) 
-![](readme/img3.png) 
+![](readme/1.png) 
+![](readme/2.png) 
+![](readme/3.png) 
 
 #### Gameplay video
 [Link](https://www.youtube.com/watch?v=YLNo_HohK5Y)
