@@ -10,11 +10,6 @@ Player’s main objective is to get as far as possible. The game is infinite - s
 
 A little sweet project will show you that any problem can be solved when enough manpower is thrown at it. Literally!!
 
-#### How to play
- * *Spacebar* - attack
- * *W* - jump
- * *S* - roll
-
 #### Team
  * [Grimani](https://ldjam.com/users/grimani)
  * [Makerart](https://ldjam.com/users/makerart)
